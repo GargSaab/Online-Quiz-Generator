@@ -11,7 +11,7 @@ app.use(cors());
 const Users = mongoose.model("UserData");
 const Instructions = mongoose.model("Instructions");
 const mongouri =
-  "mongodb+srv://Quizapp:xAf25BepaZNVSzo2@cluster0.3vny8.mongodb.net/Quizdata?retryWrites=true&w=majority";
+  "mongodb://<username>:<password>@<address>";
 
 mongoose.connect(mongouri, {
   useNewUrlParser: true,
